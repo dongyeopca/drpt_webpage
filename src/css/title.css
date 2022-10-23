@@ -1,0 +1,77 @@
+.title-container {
+  width: 100%;
+}
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 0 90px;
+}
+.title-content > p {
+  margin: 60px 0 10px 0;
+  font-size: 20px;
+}
+#titlesub {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.title-content > h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+#brand-name {
+  /* font-family: "Nanum Gothic", sans-serif; */
+  font-weight: 300;
+  font-size: 70px;
+  margin: 60px 0 calc(46.5vh) 0;
+}
+#subtitle {
+  display: block;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 90px 30px;
+  }
+  .title-content > h2 {
+    text-align: center;
+  }
+  .title-content > p {
+    font-size: 22px;
+  }
+  #titlesub {
+    display: block;
+    font-size: 22px;
+  }
+  #brand-name {
+    margin: 240px 0 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-content {
+    padding: 0 20px;
+  }
+  .title-content > h2 {
+    font-size: 1.7rem;
+  }
+  .title-content > p {
+    font-size: 0.9rem;
+  }
+  #titlesub {
+    font-size: 0.9rem;
+  }
+  #brand-name {
+    font-size: 50px;
+    padding: 20px 0 20px 0;
+  }
+}
